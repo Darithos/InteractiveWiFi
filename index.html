@@ -9,16 +9,21 @@
 <body>
 
 <div class="floorplan">
-  <img src="path_to_your_floorplan_image.png" alt="Floorplan">
-  <button class="wifi-spot" onclick="showSpeedTestInfo()">Wi-Fi Spot</button>
-  <div id="speedTestInfo" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeSpeedTestInfo()">&times;</span>
-      <p>Download: 150 Mbps</p>
-      <p>Upload: 25 Mbps</p>
-      <p>Ping: 10 ms</p>
-      <p>Jitter: 2 ms</p>
-    </div>
+  <img src="floorplan.jpg" alt="Floorplan" class="floorplan-img">
+  <div class="wifi-spot" style="top: 50%; left: 50%;" onclick="showSpeedTestInfo('speedTest1')">
+    <!-- Wi-Fi Icon Here -->
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="speedTest1" class="modal">
+  <!-- Modal Content -->
+  <div class="modal-content">
+    <span class="close" onclick="closeSpeedTestInfo('speedTest1')">&times;</span>
+    <p><strong>Download:</strong> 106.39 Mbps</p>
+    <p><strong>Upload:</strong> 112.34 Mbps</p>
+    <p><strong>Ping:</strong> 4 ms</p>
+    <p><strong>Jitter:</strong> 0.6 ms</p>
   </div>
 </div>
 
