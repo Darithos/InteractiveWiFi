@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wi-Fi Speed Test Interactive Floorplan</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="floorplan">
+  <img src="path_to_your_floorplan_image.png" alt="Floorplan">
+  <button class="wifi-spot" onclick="showSpeedTestInfo()">Wi-Fi Spot</button>
+  <div id="speedTestInfo" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeSpeedTestInfo()">&times;</span>
+      <p>Download: 150 Mbps</p>
+      <p>Upload: 25 Mbps</p>
+      <p>Ping: 10 ms</p>
+      <p>Jitter: 2 ms</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
