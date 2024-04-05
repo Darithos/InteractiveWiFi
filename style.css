@@ -7,7 +7,7 @@ body, html {
 .floorplan {
   position: relative;
   width: 100%;
-  max-width: 900px; /* Adjust as needed */
+  max-width: 900px; /* Adjust based on your actual image size */
   margin: auto;
 }
 
@@ -17,13 +17,14 @@ body, html {
 }
 
 .wifi-spot {
-  background-image: url('wifi-icon.png'); /* Add your Wi-Fi icon image path here */
-  background-size: cover;
+  background-image: url('wifi-icon.png'); /* Add the path to your Wi-Fi icon image */
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
-  width: 32px; /* Adjust size as needed */
-  height: 32px; /* Adjust size as needed */
+  width: 32px; /* Adjust based on your preference */
+  height: 32px; /* Adjust based on your preference */
   cursor: pointer;
-  /* Use top and left to position the icon over the floorplan */
+  /* You will need to position each wifi-spot individually using top and left values */
 }
 
 .modal {
@@ -47,6 +48,7 @@ body, html {
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Adding some shadow for depth */
 }
 
 .close {
